@@ -18,6 +18,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     avatarInfo = [[NSDictionary dictionaryWithContentsOfFile:[self avatarPlistPath]] retain];
+    imageRequestQueue = [[NSOperationQueue alloc] init];
 }
 
 - (NSArray *)avatars {
@@ -33,20 +34,24 @@
 }
 
 - (UIImage *)imageForRowAtIndexPath:(NSIndexPath *)indexPath {
+    
     NSString *filename = [[self avatars] objectAtIndex:indexPath.row];
     NSString *baseURL = [avatarInfo objectForKey:@"BaseURL"];
     
     NSString *urlString = [baseURL stringByAppendingString:filename];
     NSURL *url = [NSURL URLWithString:urlString];
     
+    if ([imageCache objectForKey:url]) {
+        return [imageCache objectForKey:url];
+    }
+    
     NSLog(@"Requesting avatar: %@", url);
     ASIHTTPRequest *request = [ASIHTTPRequest requestWithURL:url];
+    request.delegate = self;
     [request startSynchronous];
     
     NSData *imageData = [request responseData];
-    NSLog(@"Response code: %d", [request responseStatusCode]);
-    NSLog(@"Downloaded %d bytes", [imageData length]);
-    
+
     return [UIImage imageWithData:imageData];
 }
 
@@ -124,19 +129,24 @@
     // Releases the view if it doesn't have a superview.
     [super didReceiveMemoryWarning];
     
-    // Relinquish ownership any cached data, images, etc that aren't in use.
+    [imageCache release];
+    imageCache = nil;
+    
+    [imageRequestQueue cancelAllOperations];
+    [imageRequestQueue release];
+    imageRequestQueue = nil;
 }
 
 - (void)viewDidUnload
 {
     [super viewDidUnload];
-
-    // Relinquish ownership of anything that can be recreated in viewDidLoad or on demand.
-    // For example: self.myOutlet = nil;
 }
 
 - (void)dealloc
 {
+    [imageRequestQueue cancelAllOperations];
+    [imageRequestQueue release];
+    [imageCache release];
     [avatarInfo release];
     [super dealloc];
 }

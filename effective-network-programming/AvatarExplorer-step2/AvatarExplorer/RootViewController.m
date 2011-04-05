@@ -67,9 +67,10 @@
         NSIndexPath *indexPath = [[request userInfo] objectForKey:@"indexPath"];
         
         BOOL rowVisible = [[self.tableView indexPathsForVisibleRows] containsObject:indexPath];
-        BOOL wasCached = [request didUseCachedResponse];
         
-        if (rowVisible && !wasCached) {
+        //show cached responses status
+        
+        if (rowVisible) {
             [self.tableView reloadRowsAtIndexPaths:[NSArray arrayWithObject:indexPath] withRowAnimation:UITableViewRowAnimationFade];
         }
     } else {
@@ -115,25 +116,18 @@
     
     if (![currentRequests containsObject:url]) {
         
-        
         [currentRequests addObject:url];
         
         ASIHTTPRequest *request = [ASIHTTPRequest requestWithURL:url];
         [request setQueue:imageQueue];
         [request setDelegate:self];
-        //[request setDownloadCache:[ASIDownloadCache sharedCache]];
-        //[request setCachePolicy:ASIUseDefaultCachePolicy];
-        //[request setCacheStoragePolicy:ASICachePermanentlyCacheStoragePolicy];
+//        [request setDownloadCache:[ASIDownloadCache sharedCache]];
+//        [request setCachePolicy:ASIAskServerIfModifiedCachePolicy];
+//        [request setCacheStoragePolicy:ASICachePermanentlyCacheStoragePolicy];
         [request setUserInfo:[NSDictionary dictionaryWithObject:indexPath forKey:@"indexPath"]];
         
         NSLog(@"Requesting avatar: %@", url);
-        [request startAsynchronous];
-        
-        //do we have any cached data?
-        NSData *cachedData = [[ASIDownloadCache sharedCache] cachedResponseDataForURL:url];
-        if (cachedData) {
-            return [UIImage imageWithData:cachedData];
-        } 
+        [request startAsynchronous];        
     }
     
     return [UIImage imageNamed:@"default_avatar.png"];

@@ -7,9 +7,13 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "ASIHTTPRequest.h"
 
-@interface RootViewController : UITableViewController {
+@interface RootViewController : UITableViewController <ASIHTTPRequestDelegate> {
     NSDictionary *avatarInfo;
+    NSMutableDictionary *imageCache;
+    NSMutableSet *currentlyRequestingUrls;
+    NSOperationQueue *imageRequestQueue;
 }
 
 @end
