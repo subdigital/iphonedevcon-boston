@@ -1,0 +1,1 @@
+This project was supposed to be called "HelloDevCon" but I made a (humorous typo).

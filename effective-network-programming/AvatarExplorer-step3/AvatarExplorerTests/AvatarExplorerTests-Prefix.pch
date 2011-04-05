@@ -1,0 +1,7 @@
+//
+// Prefix header for all source files of the 'AvatarExplorerTests' target in the 'AvatarExplorerTests' project
+//
+
+#ifdef __OBJC__
+    #import <UIKit/UIKit.h>
+#endif

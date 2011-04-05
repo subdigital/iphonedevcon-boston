@@ -1,0 +1,564 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B58D67181336809800ACEF12 /* default_avatar.png in Resources */ = {isa = PBXBuildFile; fileRef = B58D67171336809800ACEF12 /* default_avatar.png */; };
+		B59B9F231336722C0065E5EF /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B59B9F221336722C0065E5EF /* UIKit.framework */; };
+		B59B9F251336722C0065E5EF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B59B9F241336722C0065E5EF /* Foundation.framework */; };
+		B59B9F271336722C0065E5EF /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B59B9F261336722C0065E5EF /* CoreGraphics.framework */; };
+		B59B9F2D1336722C0065E5EF /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = B59B9F2B1336722C0065E5EF /* InfoPlist.strings */; };
+		B59B9F301336722C0065E5EF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B59B9F2F1336722C0065E5EF /* main.m */; };
+		B59B9F331336722C0065E5EF /* AvatarExplorerAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B59B9F321336722C0065E5EF /* AvatarExplorerAppDelegate.m */; };
+		B59B9F361336722C0065E5EF /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = B59B9F341336722C0065E5EF /* MainWindow.xib */; };
+		B59B9F391336722C0065E5EF /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B59B9F381336722C0065E5EF /* RootViewController.m */; };
+		B59B9F3C1336722C0065E5EF /* RootViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B59B9F3A1336722C0065E5EF /* RootViewController.xib */; };
+		B59B9F431336722C0065E5EF /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B59B9F221336722C0065E5EF /* UIKit.framework */; };
+		B59B9F441336722C0065E5EF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B59B9F241336722C0065E5EF /* Foundation.framework */; };
+		B59B9F451336722C0065E5EF /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B59B9F261336722C0065E5EF /* CoreGraphics.framework */; };
+		B59B9F4D1336722C0065E5EF /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = B59B9F4B1336722C0065E5EF /* InfoPlist.strings */; };
+		B59B9F501336722C0065E5EF /* AvatarExplorerTests.h in Resources */ = {isa = PBXBuildFile; fileRef = B59B9F4F1336722C0065E5EF /* AvatarExplorerTests.h */; };
+		B59B9F521336722C0065E5EF /* AvatarExplorerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B59B9F511336722C0065E5EF /* AvatarExplorerTests.m */; };
+		B59B9F5C133672EA0065E5EF /* Avatars.plist in Resources */ = {isa = PBXBuildFile; fileRef = B59B9F5B133672EA0065E5EF /* Avatars.plist */; };
+		B59B9F73133677C60065E5EF /* ASIAuthenticationDialog.m in Sources */ = {isa = PBXBuildFile; fileRef = B59B9F60133677C50065E5EF /* ASIAuthenticationDialog.m */; };
+		B59B9F74133677C60065E5EF /* ASIDataCompressor.m in Sources */ = {isa = PBXBuildFile; fileRef = B59B9F63133677C60065E5EF /* ASIDataCompressor.m */; };
+		B59B9F75133677C60065E5EF /* ASIDataDecompressor.m in Sources */ = {isa = PBXBuildFile; fileRef = B59B9F65133677C60065E5EF /* ASIDataDecompressor.m */; };
+		B59B9F76133677C60065E5EF /* ASIDownloadCache.m in Sources */ = {isa = PBXBuildFile; fileRef = B59B9F67133677C60065E5EF /* ASIDownloadCache.m */; };
+		B59B9F77133677C60065E5EF /* ASIFormDataRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = B59B9F69133677C60065E5EF /* ASIFormDataRequest.m */; };
+		B59B9F78133677C60065E5EF /* ASIHTTPRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = B59B9F6B133677C60065E5EF /* ASIHTTPRequest.m */; };
+		B59B9F79133677C60065E5EF /* ASIInputStream.m in Sources */ = {isa = PBXBuildFile; fileRef = B59B9F6F133677C60065E5EF /* ASIInputStream.m */; };
+		B59B9F7A133677C60065E5EF /* ASINetworkQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = B59B9F71133677C60065E5EF /* ASINetworkQueue.m */; };
+		B59B9F7F133677E20065E5EF /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = B59B9F7E133677E20065E5EF /* Reachability.m */; };
+		B59B9F84133678290065E5EF /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B59B9F80133678290065E5EF /* CFNetwork.framework */; };
+		B59B9F85133678290065E5EF /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = B59B9F81133678290065E5EF /* libz.dylib */; };
+		B59B9F86133678290065E5EF /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B59B9F82133678290065E5EF /* MobileCoreServices.framework */; };
+		B59B9F87133678290065E5EF /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B59B9F83133678290065E5EF /* SystemConfiguration.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B59B9F461336722C0065E5EF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B59B9F151336722B0065E5EF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B59B9F1D1336722B0065E5EF;
+			remoteInfo = AvatarExplorer;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		B58D67171336809800ACEF12 /* default_avatar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = default_avatar.png; sourceTree = "<group>"; };
+		B59B9F1E1336722B0065E5EF /* AvatarExplorer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AvatarExplorer.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B59B9F221336722C0065E5EF /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		B59B9F241336722C0065E5EF /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		B59B9F261336722C0065E5EF /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		B59B9F2A1336722C0065E5EF /* AvatarExplorer-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "AvatarExplorer-Info.plist"; sourceTree = "<group>"; };
+		B59B9F2C1336722C0065E5EF /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		B59B9F2E1336722C0065E5EF /* AvatarExplorer-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AvatarExplorer-Prefix.pch"; sourceTree = "<group>"; };
+		B59B9F2F1336722C0065E5EF /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		B59B9F311336722C0065E5EF /* AvatarExplorerAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AvatarExplorerAppDelegate.h; sourceTree = "<group>"; };
+		B59B9F321336722C0065E5EF /* AvatarExplorerAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AvatarExplorerAppDelegate.m; sourceTree = "<group>"; };
+		B59B9F351336722C0065E5EF /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainWindow.xib; sourceTree = "<group>"; };
+		B59B9F371336722C0065E5EF /* RootViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RootViewController.h; sourceTree = "<group>"; };
+		B59B9F381336722C0065E5EF /* RootViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RootViewController.m; sourceTree = "<group>"; };
+		B59B9F3B1336722C0065E5EF /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/RootViewController.xib; sourceTree = "<group>"; };
+		B59B9F421336722C0065E5EF /* AvatarExplorerTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AvatarExplorerTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B59B9F4A1336722C0065E5EF /* AvatarExplorerTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "AvatarExplorerTests-Info.plist"; sourceTree = "<group>"; };
+		B59B9F4C1336722C0065E5EF /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		B59B9F4E1336722C0065E5EF /* AvatarExplorerTests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AvatarExplorerTests-Prefix.pch"; sourceTree = "<group>"; };
+		B59B9F4F1336722C0065E5EF /* AvatarExplorerTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AvatarExplorerTests.h; sourceTree = "<group>"; };
+		B59B9F511336722C0065E5EF /* AvatarExplorerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AvatarExplorerTests.m; sourceTree = "<group>"; };
+		B59B9F5B133672EA0065E5EF /* Avatars.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Avatars.plist; sourceTree = "<group>"; };
+		B59B9F5D133674770065E5EF /* macros.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = macros.h; sourceTree = "<group>"; };
+		B59B9F5F133677C50065E5EF /* ASIAuthenticationDialog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASIAuthenticationDialog.h; sourceTree = "<group>"; };
+		B59B9F60133677C50065E5EF /* ASIAuthenticationDialog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASIAuthenticationDialog.m; sourceTree = "<group>"; };
+		B59B9F61133677C50065E5EF /* ASICacheDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASICacheDelegate.h; sourceTree = "<group>"; };
+		B59B9F62133677C50065E5EF /* ASIDataCompressor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASIDataCompressor.h; sourceTree = "<group>"; };
+		B59B9F63133677C60065E5EF /* ASIDataCompressor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASIDataCompressor.m; sourceTree = "<group>"; };
+		B59B9F64133677C60065E5EF /* ASIDataDecompressor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASIDataDecompressor.h; sourceTree = "<group>"; };
+		B59B9F65133677C60065E5EF /* ASIDataDecompressor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASIDataDecompressor.m; sourceTree = "<group>"; };
+		B59B9F66133677C60065E5EF /* ASIDownloadCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASIDownloadCache.h; sourceTree = "<group>"; };
+		B59B9F67133677C60065E5EF /* ASIDownloadCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASIDownloadCache.m; sourceTree = "<group>"; };
+		B59B9F68133677C60065E5EF /* ASIFormDataRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASIFormDataRequest.h; sourceTree = "<group>"; };
+		B59B9F69133677C60065E5EF /* ASIFormDataRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASIFormDataRequest.m; sourceTree = "<group>"; };
+		B59B9F6A133677C60065E5EF /* ASIHTTPRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASIHTTPRequest.h; sourceTree = "<group>"; };
+		B59B9F6B133677C60065E5EF /* ASIHTTPRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASIHTTPRequest.m; sourceTree = "<group>"; };
+		B59B9F6C133677C60065E5EF /* ASIHTTPRequestConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASIHTTPRequestConfig.h; sourceTree = "<group>"; };
+		B59B9F6D133677C60065E5EF /* ASIHTTPRequestDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASIHTTPRequestDelegate.h; sourceTree = "<group>"; };
+		B59B9F6E133677C60065E5EF /* ASIInputStream.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASIInputStream.h; sourceTree = "<group>"; };
+		B59B9F6F133677C60065E5EF /* ASIInputStream.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASIInputStream.m; sourceTree = "<group>"; };
+		B59B9F70133677C60065E5EF /* ASINetworkQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASINetworkQueue.h; sourceTree = "<group>"; };
+		B59B9F71133677C60065E5EF /* ASINetworkQueue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASINetworkQueue.m; sourceTree = "<group>"; };
+		B59B9F72133677C60065E5EF /* ASIProgressDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASIProgressDelegate.h; sourceTree = "<group>"; };
+		B59B9F7D133677E20065E5EF /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
+		B59B9F7E133677E20065E5EF /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
+		B59B9F80133678290065E5EF /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		B59B9F81133678290065E5EF /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		B59B9F82133678290065E5EF /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		B59B9F83133678290065E5EF /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B59B9F1B1336722B0065E5EF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B59B9F84133678290065E5EF /* CFNetwork.framework in Frameworks */,
+				B59B9F85133678290065E5EF /* libz.dylib in Frameworks */,
+				B59B9F86133678290065E5EF /* MobileCoreServices.framework in Frameworks */,
+				B59B9F87133678290065E5EF /* SystemConfiguration.framework in Frameworks */,
+				B59B9F231336722C0065E5EF /* UIKit.framework in Frameworks */,
+				B59B9F251336722C0065E5EF /* Foundation.framework in Frameworks */,
+				B59B9F271336722C0065E5EF /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B59B9F3E1336722C0065E5EF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B59B9F431336722C0065E5EF /* UIKit.framework in Frameworks */,
+				B59B9F441336722C0065E5EF /* Foundation.framework in Frameworks */,
+				B59B9F451336722C0065E5EF /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B59B9F131336722B0065E5EF = {
+			isa = PBXGroup;
+			children = (
+				B59B9F281336722C0065E5EF /* AvatarExplorer */,
+				B59B9F481336722C0065E5EF /* AvatarExplorerTests */,
+				B59B9F211336722C0065E5EF /* Frameworks */,
+				B59B9F1F1336722C0065E5EF /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		B59B9F1F1336722C0065E5EF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B59B9F1E1336722B0065E5EF /* AvatarExplorer.app */,
+				B59B9F421336722C0065E5EF /* AvatarExplorerTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B59B9F211336722C0065E5EF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B59B9F80133678290065E5EF /* CFNetwork.framework */,
+				B59B9F81133678290065E5EF /* libz.dylib */,
+				B59B9F82133678290065E5EF /* MobileCoreServices.framework */,
+				B59B9F83133678290065E5EF /* SystemConfiguration.framework */,
+				B59B9F221336722C0065E5EF /* UIKit.framework */,
+				B59B9F241336722C0065E5EF /* Foundation.framework */,
+				B59B9F261336722C0065E5EF /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B59B9F281336722C0065E5EF /* AvatarExplorer */ = {
+			isa = PBXGroup;
+			children = (
+				B59B9F7C133677E20065E5EF /* Reachability */,
+				B59B9F5E133677A60065E5EF /* ASI HTTP Request */,
+				B59B9F311336722C0065E5EF /* AvatarExplorerAppDelegate.h */,
+				B59B9F321336722C0065E5EF /* AvatarExplorerAppDelegate.m */,
+				B59B9F341336722C0065E5EF /* MainWindow.xib */,
+				B59B9F371336722C0065E5EF /* RootViewController.h */,
+				B59B9F381336722C0065E5EF /* RootViewController.m */,
+				B59B9F3A1336722C0065E5EF /* RootViewController.xib */,
+				B59B9F291336722C0065E5EF /* Supporting Files */,
+				B59B9F5D133674770065E5EF /* macros.h */,
+			);
+			path = AvatarExplorer;
+			sourceTree = "<group>";
+		};
+		B59B9F291336722C0065E5EF /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				B58D67171336809800ACEF12 /* default_avatar.png */,
+				B59B9F2A1336722C0065E5EF /* AvatarExplorer-Info.plist */,
+				B59B9F2B1336722C0065E5EF /* InfoPlist.strings */,
+				B59B9F2E1336722C0065E5EF /* AvatarExplorer-Prefix.pch */,
+				B59B9F2F1336722C0065E5EF /* main.m */,
+				B59B9F5B133672EA0065E5EF /* Avatars.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		B59B9F481336722C0065E5EF /* AvatarExplorerTests */ = {
+			isa = PBXGroup;
+			children = (
+				B59B9F4F1336722C0065E5EF /* AvatarExplorerTests.h */,
+				B59B9F511336722C0065E5EF /* AvatarExplorerTests.m */,
+				B59B9F491336722C0065E5EF /* Supporting Files */,
+			);
+			path = AvatarExplorerTests;
+			sourceTree = "<group>";
+		};
+		B59B9F491336722C0065E5EF /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				B59B9F4A1336722C0065E5EF /* AvatarExplorerTests-Info.plist */,
+				B59B9F4B1336722C0065E5EF /* InfoPlist.strings */,
+				B59B9F4E1336722C0065E5EF /* AvatarExplorerTests-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		B59B9F5E133677A60065E5EF /* ASI HTTP Request */ = {
+			isa = PBXGroup;
+			children = (
+				B59B9F5F133677C50065E5EF /* ASIAuthenticationDialog.h */,
+				B59B9F60133677C50065E5EF /* ASIAuthenticationDialog.m */,
+				B59B9F61133677C50065E5EF /* ASICacheDelegate.h */,
+				B59B9F62133677C50065E5EF /* ASIDataCompressor.h */,
+				B59B9F63133677C60065E5EF /* ASIDataCompressor.m */,
+				B59B9F64133677C60065E5EF /* ASIDataDecompressor.h */,
+				B59B9F65133677C60065E5EF /* ASIDataDecompressor.m */,
+				B59B9F66133677C60065E5EF /* ASIDownloadCache.h */,
+				B59B9F67133677C60065E5EF /* ASIDownloadCache.m */,
+				B59B9F68133677C60065E5EF /* ASIFormDataRequest.h */,
+				B59B9F69133677C60065E5EF /* ASIFormDataRequest.m */,
+				B59B9F6A133677C60065E5EF /* ASIHTTPRequest.h */,
+				B59B9F6B133677C60065E5EF /* ASIHTTPRequest.m */,
+				B59B9F6C133677C60065E5EF /* ASIHTTPRequestConfig.h */,
+				B59B9F6D133677C60065E5EF /* ASIHTTPRequestDelegate.h */,
+				B59B9F6E133677C60065E5EF /* ASIInputStream.h */,
+				B59B9F6F133677C60065E5EF /* ASIInputStream.m */,
+				B59B9F70133677C60065E5EF /* ASINetworkQueue.h */,
+				B59B9F71133677C60065E5EF /* ASINetworkQueue.m */,
+				B59B9F72133677C60065E5EF /* ASIProgressDelegate.h */,
+			);
+			name = "ASI HTTP Request";
+			sourceTree = "<group>";
+		};
+		B59B9F7C133677E20065E5EF /* Reachability */ = {
+			isa = PBXGroup;
+			children = (
+				B59B9F7D133677E20065E5EF /* Reachability.h */,
+				B59B9F7E133677E20065E5EF /* Reachability.m */,
+			);
+			path = Reachability;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B59B9F1D1336722B0065E5EF /* AvatarExplorer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B59B9F551336722C0065E5EF /* Build configuration list for PBXNativeTarget "AvatarExplorer" */;
+			buildPhases = (
+				B59B9F1A1336722B0065E5EF /* Sources */,
+				B59B9F1B1336722B0065E5EF /* Frameworks */,
+				B59B9F1C1336722B0065E5EF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AvatarExplorer;
+			productName = AvatarExplorer;
+			productReference = B59B9F1E1336722B0065E5EF /* AvatarExplorer.app */;
+			productType = "com.apple.product-type.application";
+		};
+		B59B9F411336722C0065E5EF /* AvatarExplorerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B59B9F581336722C0065E5EF /* Build configuration list for PBXNativeTarget "AvatarExplorerTests" */;
+			buildPhases = (
+				B59B9F3D1336722C0065E5EF /* Sources */,
+				B59B9F3E1336722C0065E5EF /* Frameworks */,
+				B59B9F3F1336722C0065E5EF /* Resources */,
+				B59B9F401336722C0065E5EF /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B59B9F471336722C0065E5EF /* PBXTargetDependency */,
+			);
+			name = AvatarExplorerTests;
+			productName = AvatarExplorerTests;
+			productReference = B59B9F421336722C0065E5EF /* AvatarExplorerTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B59B9F151336722B0065E5EF /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = B59B9F181336722B0065E5EF /* Build configuration list for PBXProject "AvatarExplorer" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = B59B9F131336722B0065E5EF;
+			productRefGroup = B59B9F1F1336722C0065E5EF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B59B9F1D1336722B0065E5EF /* AvatarExplorer */,
+				B59B9F411336722C0065E5EF /* AvatarExplorerTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B59B9F1C1336722B0065E5EF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B59B9F2D1336722C0065E5EF /* InfoPlist.strings in Resources */,
+				B59B9F361336722C0065E5EF /* MainWindow.xib in Resources */,
+				B59B9F3C1336722C0065E5EF /* RootViewController.xib in Resources */,
+				B59B9F5C133672EA0065E5EF /* Avatars.plist in Resources */,
+				B58D67181336809800ACEF12 /* default_avatar.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B59B9F3F1336722C0065E5EF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B59B9F4D1336722C0065E5EF /* InfoPlist.strings in Resources */,
+				B59B9F501336722C0065E5EF /* AvatarExplorerTests.h in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		B59B9F401336722C0065E5EF /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B59B9F1A1336722B0065E5EF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B59B9F301336722C0065E5EF /* main.m in Sources */,
+				B59B9F331336722C0065E5EF /* AvatarExplorerAppDelegate.m in Sources */,
+				B59B9F391336722C0065E5EF /* RootViewController.m in Sources */,
+				B59B9F73133677C60065E5EF /* ASIAuthenticationDialog.m in Sources */,
+				B59B9F74133677C60065E5EF /* ASIDataCompressor.m in Sources */,
+				B59B9F75133677C60065E5EF /* ASIDataDecompressor.m in Sources */,
+				B59B9F76133677C60065E5EF /* ASIDownloadCache.m in Sources */,
+				B59B9F77133677C60065E5EF /* ASIFormDataRequest.m in Sources */,
+				B59B9F78133677C60065E5EF /* ASIHTTPRequest.m in Sources */,
+				B59B9F79133677C60065E5EF /* ASIInputStream.m in Sources */,
+				B59B9F7A133677C60065E5EF /* ASINetworkQueue.m in Sources */,
+				B59B9F7F133677E20065E5EF /* Reachability.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B59B9F3D1336722C0065E5EF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B59B9F521336722C0065E5EF /* AvatarExplorerTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B59B9F471336722C0065E5EF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B59B9F1D1336722B0065E5EF /* AvatarExplorer */;
+			targetProxy = B59B9F461336722C0065E5EF /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		B59B9F2B1336722C0065E5EF /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B59B9F2C1336722C0065E5EF /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		B59B9F341336722C0065E5EF /* MainWindow.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B59B9F351336722C0065E5EF /* en */,
+			);
+			name = MainWindow.xib;
+			sourceTree = "<group>";
+		};
+		B59B9F3A1336722C0065E5EF /* RootViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B59B9F3B1336722C0065E5EF /* en */,
+			);
+			name = RootViewController.xib;
+			sourceTree = "<group>";
+		};
+		B59B9F4B1336722C0065E5EF /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B59B9F4C1336722C0065E5EF /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B59B9F531336722C0065E5EF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = DEBUG;
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		B59B9F541336722C0065E5EF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+			};
+			name = Release;
+		};
+		B59B9F561336722C0065E5EF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "AvatarExplorer/AvatarExplorer-Prefix.pch";
+				INFOPLIST_FILE = "AvatarExplorer/AvatarExplorer-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		B59B9F571336722C0065E5EF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "AvatarExplorer/AvatarExplorer-Prefix.pch";
+				INFOPLIST_FILE = "AvatarExplorer/AvatarExplorer-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				VALIDATE_PRODUCT = YES;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		B59B9F591336722C0065E5EF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/AvatarExplorer.app/AvatarExplorer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "AvatarExplorerTests/AvatarExplorerTests-Prefix.pch";
+				INFOPLIST_FILE = "AvatarExplorerTests/AvatarExplorerTests-Info.plist";
+				OTHER_LDFLAGS = (
+					"-framework",
+					SenTestingKit,
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		B59B9F5A1336722C0065E5EF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/AvatarExplorer.app/AvatarExplorer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "AvatarExplorerTests/AvatarExplorerTests-Prefix.pch";
+				INFOPLIST_FILE = "AvatarExplorerTests/AvatarExplorerTests-Info.plist";
+				OTHER_LDFLAGS = (
+					"-framework",
+					SenTestingKit,
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B59B9F181336722B0065E5EF /* Build configuration list for PBXProject "AvatarExplorer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B59B9F531336722C0065E5EF /* Debug */,
+				B59B9F541336722C0065E5EF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B59B9F551336722C0065E5EF /* Build configuration list for PBXNativeTarget "AvatarExplorer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B59B9F561336722C0065E5EF /* Debug */,
+				B59B9F571336722C0065E5EF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B59B9F581336722C0065E5EF /* Build configuration list for PBXNativeTarget "AvatarExplorerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B59B9F591336722C0065E5EF /* Debug */,
+				B59B9F5A1336722C0065E5EF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B59B9F151336722B0065E5EF /* Project object */;
+}

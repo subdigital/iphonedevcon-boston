@@ -1,0 +1,1 @@
+This project is an example I found from 31 Days of iPhone.  It's a good example of how easy it is to do animations with UIKit.

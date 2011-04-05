@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Avatars</key>
+	<array>
+		<string>aiko.png</string>
+		<string>arturia.png</string>
+		<string>chichi.png</string>
+		<string>chii.png</string>
+		<string>futaba.png</string>
+		<string>haruhi.png</string>
+		<string>henrietta.png</string>
+		<string>konata.png</string>
+		<string>kotomi.png</string>
+		<string>kyou.png</string>
+		<string>mai.png</string>
+		<string>mikuru.png</string>
+		<string>miyako.png</string>
+		<string>motoko.png</string>
+		<string>naru.png</string>
+		<string>rin.png</string>
+		<string>sayu.png</string>
+		<string>tifa.png</string>
+		<string>tomoyo.png</string>
+		<string>videl.png</string>
+		<string>yumi.png</string>
+	</array>
+	<key>BaseURL</key>
+	<string>http://dl.dropbox.com/u/312728/iphonedevcon/avatars/</string>
+</dict>
+</plist>

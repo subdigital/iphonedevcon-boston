@@ -1,0 +1,164 @@
+// !$*UTF8*$!
+{
+	1D3623250D0F684500981E51 /* SnowfallAppDelegate.m */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {2244, 1566}}";
+			sepNavSelRange = "{44, 0}";
+			sepNavVisRange = "{0, 292}";
+		};
+	};
+	1D6058900D05DD3D006BFB54 /* Snowfall */ = {
+		activeExec = 0;
+		executables = (
+			B56978A0125289BA00E00DF2 /* Snowfall */,
+		);
+	};
+	28D7ACF60DDB3853001CB0EB /* SnowfallViewController.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1172, 544}}";
+			sepNavSelRange = "{243, 0}";
+			sepNavVisRange = "{0, 253}";
+		};
+	};
+	28D7ACF70DDB3853001CB0EB /* SnowfallViewController.m */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1172, 1344}}";
+			sepNavSelRange = "{1466, 0}";
+			sepNavVisRange = "{876, 1112}";
+		};
+	};
+	29B97313FDCFA39411CA2CEA /* Project object */ = {
+		activeBuildConfigurationName = Debug;
+		activeExecutable = B56978A0125289BA00E00DF2 /* Snowfall */;
+		activeSDKPreference = iphonesimulator4.3;
+		activeTarget = 1D6058900D05DD3D006BFB54 /* Snowfall */;
+		addToTargets = (
+			1D6058900D05DD3D006BFB54 /* Snowfall */,
+		);
+		codeSenseManager = B56978A6125289D900E00DF2 /* Code sense */;
+		executables = (
+			B56978A0125289BA00E00DF2 /* Snowfall */,
+		);
+		perUserDictionary = {
+			PBXConfiguration.PBXFileTableDataSource3.PBXFileTableDataSource = {
+				PBXFileTableDataSourceColumnSortingDirectionKey = "-1";
+				PBXFileTableDataSourceColumnSortingKey = PBXFileDataSource_Filename_ColumnID;
+				PBXFileTableDataSourceColumnWidthsKey = (
+					20,
+					994,
+					20,
+					48,
+					43,
+					43,
+					20,
+				);
+				PBXFileTableDataSourceColumnsKey = (
+					PBXFileDataSource_FiletypeID,
+					PBXFileDataSource_Filename_ColumnID,
+					PBXFileDataSource_Built_ColumnID,
+					PBXFileDataSource_ObjectSize_ColumnID,
+					PBXFileDataSource_Errors_ColumnID,
+					PBXFileDataSource_Warnings_ColumnID,
+					PBXFileDataSource_Target_ColumnID,
+				);
+			};
+			PBXPerProjectTemplateStateSaveDate = 323532266;
+			PBXWorkspaceStateSaveDate = 323532266;
+		};
+		perUserProjectItems = {
+			B56978AE12528A4400E00DF2 /* PBXTextBookmark */ = B56978AE12528A4400E00DF2 /* PBXTextBookmark */;
+			B56978C212528B4C00E00DF2 /* PBXTextBookmark */ = B56978C212528B4C00E00DF2 /* PBXTextBookmark */;
+			B5F1B2A21348B615008145D3 /* PBXBookmark */ = B5F1B2A21348B615008145D3 /* PBXBookmark */;
+			B5F1B2A31348B615008145D3 /* XCBuildMessageTextBookmark */ = B5F1B2A31348B615008145D3 /* XCBuildMessageTextBookmark */;
+			B5F1B2B41348B632008145D3 /* PBXTextBookmark */ = B5F1B2B41348B632008145D3 /* PBXTextBookmark */;
+		};
+		sourceControlManager = B56978A5125289D900E00DF2 /* Source Control */;
+		userBuildSettings = {
+		};
+	};
+	B56978A0125289BA00E00DF2 /* Snowfall */ = {
+		isa = PBXExecutable;
+		activeArgIndices = (
+		);
+		argumentStrings = (
+		);
+		autoAttachOnCrash = 1;
+		breakpointsEnabled = 0;
+		configStateDict = {
+		};
+		customDataFormattersEnabled = 1;
+		dataTipCustomDataFormattersEnabled = 1;
+		dataTipShowTypeColumn = 1;
+		dataTipSortType = 0;
+		debuggerPlugin = GDBDebugging;
+		disassemblyDisplayState = 0;
+		dylibVariantSuffix = "";
+		enableDebugStr = 1;
+		environmentEntries = (
+		);
+		executableSystemSymbolLevel = 0;
+		executableUserSymbolLevel = 0;
+		libgmallocEnabled = 0;
+		name = Snowfall;
+		showTypeColumn = 0;
+		sourceDirectories = (
+		);
+	};
+	B56978A5125289D900E00DF2 /* Source Control */ = {
+		isa = PBXSourceControlManager;
+		fallbackIsa = XCSourceControlManager;
+		isSCMEnabled = 0;
+		scmConfiguration = {
+			repositoryNamesForRoots = {
+				"" = "";
+			};
+		};
+	};
+	B56978A6125289D900E00DF2 /* Code sense */ = {
+		isa = PBXCodeSenseManager;
+		indexTemplatePath = "";
+	};
+	B56978AE12528A4400E00DF2 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 1D3623250D0F684500981E51 /* SnowfallAppDelegate.m */;
+		name = "SnowfallAppDelegate.m: 4";
+		rLen = 0;
+		rLoc = 44;
+		rType = 0;
+		vrLen = 292;
+		vrLoc = 0;
+	};
+	B56978C212528B4C00E00DF2 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 28D7ACF60DDB3853001CB0EB /* SnowfallViewController.h */;
+		name = "SnowfallViewController.h: 12";
+		rLen = 0;
+		rLoc = 243;
+		rType = 0;
+		vrLen = 253;
+		vrLoc = 0;
+	};
+	B5F1B2A21348B615008145D3 /* PBXBookmark */ = {
+		isa = PBXBookmark;
+		fRef = B56978BE12528A6600E00DF2 /* flake.png */;
+	};
+	B5F1B2A31348B615008145D3 /* XCBuildMessageTextBookmark */ = {
+		isa = PBXTextBookmark;
+		comments = "Unused variable 'imageView'";
+		fRef = 28D7ACF70DDB3853001CB0EB /* SnowfallViewController.m */;
+		fallbackIsa = XCBuildMessageTextBookmark;
+		rLen = 1;
+		rLoc = 56;
+		rType = 1;
+	};
+	B5F1B2B41348B632008145D3 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 28D7ACF70DDB3853001CB0EB /* SnowfallViewController.m */;
+		name = "SnowfallViewController.m: 58";
+		rLen = 0;
+		rLoc = 1466;
+		rType = 0;
+		vrLen = 1112;
+		vrLoc = 876;
+	};
+}

@@ -1,0 +1,309 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B5DE4243134B4F2800A137DE /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B5DE4242134B4F2800A137DE /* UIKit.framework */; };
+		B5DE4245134B4F2800A137DE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B5DE4244134B4F2800A137DE /* Foundation.framework */; };
+		B5DE4247134B4F2800A137DE /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B5DE4246134B4F2800A137DE /* CoreGraphics.framework */; };
+		B5DE424D134B4F2800A137DE /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = B5DE424B134B4F2800A137DE /* InfoPlist.strings */; };
+		B5DE4250134B4F2800A137DE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B5DE424F134B4F2800A137DE /* main.m */; };
+		B5DE4253134B4F2800A137DE /* HellDevConAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B5DE4252134B4F2800A137DE /* HellDevConAppDelegate.m */; };
+		B5DE4256134B4F2800A137DE /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = B5DE4254134B4F2800A137DE /* MainWindow.xib */; };
+		B5DE4259134B4F2800A137DE /* HellDevConViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B5DE4258134B4F2800A137DE /* HellDevConViewController.m */; };
+		B5DE425C134B4F2800A137DE /* HellDevConViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B5DE425A134B4F2800A137DE /* HellDevConViewController.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		B5DE423E134B4F2800A137DE /* HellDevCon.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HellDevCon.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B5DE4242134B4F2800A137DE /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		B5DE4244134B4F2800A137DE /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		B5DE4246134B4F2800A137DE /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		B5DE424A134B4F2800A137DE /* HellDevCon-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "HellDevCon-Info.plist"; sourceTree = "<group>"; };
+		B5DE424C134B4F2800A137DE /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		B5DE424E134B4F2800A137DE /* HellDevCon-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "HellDevCon-Prefix.pch"; sourceTree = "<group>"; };
+		B5DE424F134B4F2800A137DE /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		B5DE4251134B4F2800A137DE /* HellDevConAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HellDevConAppDelegate.h; sourceTree = "<group>"; };
+		B5DE4252134B4F2800A137DE /* HellDevConAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HellDevConAppDelegate.m; sourceTree = "<group>"; };
+		B5DE4255134B4F2800A137DE /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainWindow.xib; sourceTree = "<group>"; };
+		B5DE4257134B4F2800A137DE /* HellDevConViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HellDevConViewController.h; sourceTree = "<group>"; };
+		B5DE4258134B4F2800A137DE /* HellDevConViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HellDevConViewController.m; sourceTree = "<group>"; };
+		B5DE425B134B4F2800A137DE /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/HellDevConViewController.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B5DE423B134B4F2800A137DE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B5DE4243134B4F2800A137DE /* UIKit.framework in Frameworks */,
+				B5DE4245134B4F2800A137DE /* Foundation.framework in Frameworks */,
+				B5DE4247134B4F2800A137DE /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B5DE4233134B4F2800A137DE = {
+			isa = PBXGroup;
+			children = (
+				B5DE4263134B50F200A137DE /* Resources */,
+				B5DE4262134B4FD700A137DE /* Models */,
+				B5DE4248134B4F2800A137DE /* HellDevCon */,
+				B5DE4241134B4F2800A137DE /* Frameworks */,
+				B5DE423F134B4F2800A137DE /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		B5DE423F134B4F2800A137DE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B5DE423E134B4F2800A137DE /* HellDevCon.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B5DE4241134B4F2800A137DE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B5DE4242134B4F2800A137DE /* UIKit.framework */,
+				B5DE4244134B4F2800A137DE /* Foundation.framework */,
+				B5DE4246134B4F2800A137DE /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B5DE4248134B4F2800A137DE /* HellDevCon */ = {
+			isa = PBXGroup;
+			children = (
+				B5DE4251134B4F2800A137DE /* HellDevConAppDelegate.h */,
+				B5DE4252134B4F2800A137DE /* HellDevConAppDelegate.m */,
+				B5DE4257134B4F2800A137DE /* HellDevConViewController.h */,
+				B5DE4258134B4F2800A137DE /* HellDevConViewController.m */,
+				B5DE4249134B4F2800A137DE /* Supporting Files */,
+			);
+			path = HellDevCon;
+			sourceTree = "<group>";
+		};
+		B5DE4249134B4F2800A137DE /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				B5DE424A134B4F2800A137DE /* HellDevCon-Info.plist */,
+				B5DE424B134B4F2800A137DE /* InfoPlist.strings */,
+				B5DE424E134B4F2800A137DE /* HellDevCon-Prefix.pch */,
+				B5DE424F134B4F2800A137DE /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		B5DE4262134B4FD700A137DE /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		B5DE4263134B50F200A137DE /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				B5DE4264134B50FA00A137DE /* XIBs */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		B5DE4264134B50FA00A137DE /* XIBs */ = {
+			isa = PBXGroup;
+			children = (
+				B5DE4254134B4F2800A137DE /* MainWindow.xib */,
+				B5DE425A134B4F2800A137DE /* HellDevConViewController.xib */,
+			);
+			name = XIBs;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B5DE423D134B4F2800A137DE /* HellDevCon */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B5DE425F134B4F2800A137DE /* Build configuration list for PBXNativeTarget "HellDevCon" */;
+			buildPhases = (
+				B5DE423A134B4F2800A137DE /* Sources */,
+				B5DE423B134B4F2800A137DE /* Frameworks */,
+				B5DE423C134B4F2800A137DE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HellDevCon;
+			productName = HellDevCon;
+			productReference = B5DE423E134B4F2800A137DE /* HellDevCon.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B5DE4235134B4F2800A137DE /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = B5DE4238134B4F2800A137DE /* Build configuration list for PBXProject "HellDevCon" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = B5DE4233134B4F2800A137DE;
+			productRefGroup = B5DE423F134B4F2800A137DE /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B5DE423D134B4F2800A137DE /* HellDevCon */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B5DE423C134B4F2800A137DE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B5DE424D134B4F2800A137DE /* InfoPlist.strings in Resources */,
+				B5DE4256134B4F2800A137DE /* MainWindow.xib in Resources */,
+				B5DE425C134B4F2800A137DE /* HellDevConViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B5DE423A134B4F2800A137DE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B5DE4250134B4F2800A137DE /* main.m in Sources */,
+				B5DE4253134B4F2800A137DE /* HellDevConAppDelegate.m in Sources */,
+				B5DE4259134B4F2800A137DE /* HellDevConViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		B5DE424B134B4F2800A137DE /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B5DE424C134B4F2800A137DE /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		B5DE4254134B4F2800A137DE /* MainWindow.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B5DE4255134B4F2800A137DE /* en */,
+			);
+			name = MainWindow.xib;
+			path = HellDevCon;
+			sourceTree = "<group>";
+		};
+		B5DE425A134B4F2800A137DE /* HellDevConViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B5DE425B134B4F2800A137DE /* en */,
+			);
+			name = HellDevConViewController.xib;
+			path = HellDevCon;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B5DE425D134B4F2800A137DE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = DEBUG;
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		B5DE425E134B4F2800A137DE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+			};
+			name = Release;
+		};
+		B5DE4260134B4F2800A137DE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "HellDevCon/HellDevCon-Prefix.pch";
+				INFOPLIST_FILE = "HellDevCon/HellDevCon-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		B5DE4261134B4F2800A137DE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "HellDevCon/HellDevCon-Prefix.pch";
+				INFOPLIST_FILE = "HellDevCon/HellDevCon-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				VALIDATE_PRODUCT = YES;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B5DE4238134B4F2800A137DE /* Build configuration list for PBXProject "HellDevCon" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B5DE425D134B4F2800A137DE /* Debug */,
+				B5DE425E134B4F2800A137DE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B5DE425F134B4F2800A137DE /* Build configuration list for PBXNativeTarget "HellDevCon" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B5DE4260134B4F2800A137DE /* Debug */,
+				B5DE4261134B4F2800A137DE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B5DE4235134B4F2800A137DE /* Project object */;
+}
