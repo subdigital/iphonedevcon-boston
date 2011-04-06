@@ -121,13 +121,19 @@
         ASIHTTPRequest *request = [ASIHTTPRequest requestWithURL:url];
         [request setQueue:imageQueue];
         [request setDelegate:self];
-//        [request setDownloadCache:[ASIDownloadCache sharedCache]];
-//        [request setCachePolicy:ASIAskServerIfModifiedCachePolicy];
-//        [request setCacheStoragePolicy:ASICachePermanentlyCacheStoragePolicy];
+        [request setDownloadCache:[ASIDownloadCache sharedCache]];
+        [request setCachePolicy:ASIAskServerIfModifiedCachePolicy];
+        [request setCacheStoragePolicy:ASICachePermanentlyCacheStoragePolicy];
         [request setUserInfo:[NSDictionary dictionaryWithObject:indexPath forKey:@"indexPath"]];
         
         NSLog(@"Requesting avatar: %@", url);
         [request startAsynchronous];        
+    }
+    
+    //check for cached image
+    NSData *cachedImageData = [[ASIDownloadCache sharedCache] cachedResponseDataForURL:url];
+    if (cachedImageData) {
+        return [UIImage imageWithData:cachedImageData];
     }
     
     return [UIImage imageNamed:@"default_avatar.png"];

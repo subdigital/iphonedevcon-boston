@@ -12,8 +12,8 @@
 @interface RootViewController : UITableViewController <ASIHTTPRequestDelegate> {
     NSDictionary *avatarInfo;
     NSMutableDictionary *imageCache;
-    NSMutableSet *currentlyRequestingUrls;
     NSOperationQueue *imageRequestQueue;
+    NSMutableSet *imageRequests;
 }
 
 @end

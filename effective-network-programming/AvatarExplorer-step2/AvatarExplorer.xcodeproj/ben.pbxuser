@@ -41,6 +41,26 @@
 		isa = PBXCodeSenseManager;
 		indexTemplatePath = "";
 	};
+	B5843A7F134BA67D0001173C /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = B59B9F381336722C0065E5EF /* RootViewController.m */;
+		name = "RootViewController.m: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 154;
+		vrLoc = 0;
+	};
+	B5843A80134BA67D0001173C /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = B59B9F381336722C0065E5EF /* RootViewController.m */;
+		name = "RootViewController.m: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 586;
+		vrLoc = 2734;
+	};
 	B59B9F151336722B0065E5EF /* Project object */ = {
 		activeBuildConfigurationName = Debug;
 		activeExecutable = B545A9E513367C8D008BA280 /* AvatarExplorer */;
@@ -55,9 +75,9 @@
 				PBXFileTableDataSourceColumnSortingKey = PBXFileDataSource_Filename_ColumnID;
 				PBXFileTableDataSourceColumnWidthsKey = (
 					20,
-					364,
+					325,
 					20,
-					48.16259765625,
+					48,
 					43,
 					43,
 					20,
@@ -72,8 +92,12 @@
 					PBXFileDataSource_Target_ColumnID,
 				);
 			};
-			PBXPerProjectTemplateStateSaveDate = 322337933;
-			PBXWorkspaceStateSaveDate = 322337933;
+			PBXPerProjectTemplateStateSaveDate = 323724897;
+			PBXWorkspaceStateSaveDate = 323724897;
+		};
+		perUserProjectItems = {
+			B5843A7F134BA67D0001173C /* PBXTextBookmark */ = B5843A7F134BA67D0001173C /* PBXTextBookmark */;
+			B5843A80134BA67D0001173C /* PBXTextBookmark */ = B5843A80134BA67D0001173C /* PBXTextBookmark */;
 		};
 		sourceControlManager = B545AA0113367C8F008BA280 /* Source Control */;
 		userBuildSettings = {
@@ -84,6 +108,14 @@
 		executables = (
 			B545A9E513367C8D008BA280 /* AvatarExplorer */,
 		);
+	};
+	B59B9F381336722C0065E5EF /* RootViewController.m */ = {
+		uiCtxt = {
+			sepNavFolds = "{\n    c =     (\n                {\n            l = DetailViewController;\n            r = \"{6044, 24}\";\n            s = 1;\n        },\n                {\n            l = DetailViewController;\n            r = \"{6095, 24}\";\n            s = 1;\n        },\n                {\n            l = \"Nib name\";\n            r = \"{6145, 12}\";\n            s = 1;\n        }\n    );\n    r = \"{0, 6928}\";\n    s = 0;\n}";
+			sepNavIntBoundsRect = "{{0, 0}, {943, 3332}}";
+			sepNavSelRange = "{0, 0}";
+			sepNavVisRange = "{2734, 586}";
+		};
 	};
 	B59B9F411336722C0065E5EF /* AvatarExplorerTests */ = {
 		activeExec = 0;

@@ -18,7 +18,10 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     avatarInfo = [[NSDictionary dictionaryWithContentsOfFile:[self avatarPlistPath]] retain];
+    
     imageRequestQueue = [[NSOperationQueue alloc] init];
+    [imageRequestQueue setMaxConcurrentOperationCount:2];
+
 }
 
 - (NSArray *)avatars {
@@ -40,19 +43,55 @@
     
     NSString *urlString = [baseURL stringByAppendingString:filename];
     NSURL *url = [NSURL URLWithString:urlString];
-    
+
     if ([imageCache objectForKey:url]) {
         return [imageCache objectForKey:url];
     }
     
+    if (!imageRequests) {
+        imageRequests = [[NSMutableSet alloc] init];
+    }
+    if ([imageRequests containsObject:url] ) {
+        return nil;
+    }
+    
+    [imageRequests addObject:url];
     NSLog(@"Requesting avatar: %@", url);
     ASIHTTPRequest *request = [ASIHTTPRequest requestWithURL:url];
     request.delegate = self;
-    [request startSynchronous];
+    request.userInfo = [NSDictionary dictionaryWithObject:indexPath forKey:@"indexPath"];
+    
+    [imageRequestQueue addOperation:request];
+    
+    return nil;
+}
+
+#pragma mark -
+#pragma mark ASI HTTP REQUEST
+
+- (void)requestFinished:(ASIHTTPRequest *)request {
+    
+    [imageRequests removeObject:request.url];
+    
+    if ([request responseStatusCode] != 200) {
+        return;
+    }
     
     NSData *imageData = [request responseData];
-
-    return [UIImage imageWithData:imageData];
+    UIImage *image = [UIImage imageWithData:imageData];
+    
+    if (!imageCache) {
+        imageCache = [[NSMutableDictionary alloc] init];
+    }
+    
+    [imageCache setObject:image forKey:[request url]];
+    
+    //reload table row
+    NSIndexPath *indexPath = [[request userInfo] objectForKey:@"indexPath"];
+    NSArray *indexPaths = [NSArray arrayWithObject:indexPath];
+    
+    [self.tableView reloadRowsAtIndexPaths:indexPaths withRowAnimation:UITableViewRowAnimationNone];
+    
 }
 
 // Customize the appearance of table view cells.
@@ -135,6 +174,9 @@
     [imageRequestQueue cancelAllOperations];
     [imageRequestQueue release];
     imageRequestQueue = nil;
+    
+    [imageRequests release];
+    imageRequests = nil;
 }
 
 - (void)viewDidUnload
@@ -144,7 +186,7 @@
 
 - (void)dealloc
 {
-    [imageRequestQueue cancelAllOperations];
+    [imageRequests release];
     [imageRequestQueue release];
     [imageCache release];
     [avatarInfo release];
